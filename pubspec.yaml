@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  intro_screen_onboarding_flutter: ^1.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -46,7 +47,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  flutter_swiper: ^1.1.6
+  flutter_swiper:  ^1.1.6
+  onboarding_overlay: ^3.2.1
+  introduction_screen: ^1.0.9
+  dots_indicator: ^1.1.0
+  email_validator: ^2.0.1
+
+  
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -57,6 +64,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
