@@ -53,9 +53,9 @@ class Onboarding extends StatelessWidget {
           MaterialPageRoute(
             // builder: (context) =>  const Home(),
             // builder: (context) => HomePage(),
-            builder: (context) => DashboardPage(),
+            // builder: (context) => DashboardPage(),
             // builder: (context) => const OtpScreen(),
-            // builder: (context) => const Register(),
+            builder: (context) => const Register(),
             // builder: (context) => LoginPage(),
             // builder: (context) => LoginRequestPage(),
           ),

@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.4 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -47,10 +47,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  flutter_swiper:  ^1.1.6
+  # flutter_swiper:  ^1.1.6
+  smooth_page_indicator: ^1.1.0
   onboarding_overlay: ^3.2.1
-  introduction_screen: ^1.0.9
-  dots_indicator: ^1.1.0
+  introduction_screen: ^3.1.11
+  dots_indicator: ^2.1.2
   email_validator: ^2.0.1
 
   
