@@ -7,6 +7,7 @@ import 'package:secure_sign/authentication/registration/register_screen.dart';
 import 'package:secure_sign/authentication/login/login_screen.dart';
 import 'package:secure_sign/home.dart';
 import 'package:secure_sign/authentication/login/login_request.dart';
+import 'package:secure_sign/project_screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,9 +56,10 @@ class Onboarding extends StatelessWidget {
             // builder: (context) => HomePage(),
             // builder: (context) => DashboardPage(),
             // builder: (context) => const OtpScreen(),
-            builder: (context) => const Register(),
+            // builder: (context) => const Register(),
             // builder: (context) => LoginPage(),
             // builder: (context) => LoginRequestPage(),
+            builder: (context) => const WelcomeScreen(),
           ),
         ),
         skipTextStyle: const TextStyle(
