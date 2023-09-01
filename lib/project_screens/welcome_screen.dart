@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:secure_sign/utils/constants.dart';
+import 'package:secure_sign/authentication/login/login_screen.dart';
+import 'package:secure_sign/authentication/registration/signup.dart';
+import 'package:get/get.dart';
+
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -28,7 +32,7 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 Expanded(
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(const LoginScreen()),
                   style: OutlinedButton.styleFrom(
                     shape: RoundedRectangleBorder(),
                     foregroundColor: tSecondaryColor,
@@ -41,7 +45,7 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(width: 10.0,),
                Expanded(
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(const SignUpScreen()),
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(),
                     foregroundColor: tWhiteColor,
