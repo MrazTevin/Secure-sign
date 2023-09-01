@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_screen_onboarding_flutter/introduction.dart';
 import 'package:intro_screen_onboarding_flutter/introscreenonboarding.dart';
@@ -5,9 +6,11 @@ import 'package:intro_screen_onboarding_flutter/introscreenonboarding.dart';
 import 'package:secure_sign/authentication/login/otp_screen.dart';
 import 'package:secure_sign/authentication/registration/register_screen.dart';
 import 'package:secure_sign/authentication/login/login_screen.dart';
+import 'package:secure_sign/authentication/registration/signup.dart';
 import 'package:secure_sign/home.dart';
 import 'package:secure_sign/authentication/login/login_request.dart';
 import 'package:secure_sign/project_screens/welcome_screen.dart';
+import 'package:secure_sign/utils/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +20,25 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return GetMaterialApp(
+      themeMode: ThemeMode.system,
+      theme: TAppTheme.lightTheme,
       home: Onboarding(),
+      initialRoute: '/', // Add a comma here
+      getPages: [
+        GetPage(name: '/', page: () => Onboarding()),
+        GetPage(name: '/login', page: () => const LoginScreen()),
+        GetPage(name: '/register', page: () => const Register()),
+        GetPage(name: '/signup', page: () => const SignUpScreen()),
+        GetPage(name: '/otp', page: () => const OtpScreen()),
+        GetPage(name: '/welcome', page: () => const WelcomeScreen()),
+        GetPage(name: '/loginrequest', page: () =>  LoginRequestPage()),
+        GetPage(name: '/home', page: () => const Home()),
+      ],
     );
   }
 }
+
 
 class Onboarding extends StatelessWidget {
    Onboarding({Key? key}) : super(key: key);
@@ -44,28 +61,30 @@ class Onboarding extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: IntroScreenOnboarding(
-        backgroudColor: const Color(0xFFf9f9f9),
-        foregroundColor: const Color(0xFFFFAA00),
-        introductionList: list,
-        onTapSkipButton: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-            // builder: (context) =>  const Home(),
-            // builder: (context) => HomePage(),
-            // builder: (context) => DashboardPage(),
-            // builder: (context) => const OtpScreen(),
-            // builder: (context) => const Register(),
-            // builder: (context) => LoginPage(),
-            // builder: (context) => LoginRequestPage(),
-            builder: (context) => const WelcomeScreen(),
+    return SafeArea(
+      child: Scaffold(
+        body: IntroScreenOnboarding(
+          backgroudColor: const Color(0xFFf9f9f9),
+          foregroundColor: const Color(0xFFFFAA00),
+          introductionList: list,
+          onTapSkipButton: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              // builder: (context) =>  const Home(),
+              // builder: (context) => HomePage(),
+              // builder: (context) => DashboardPage(),
+              // builder: (context) => const OtpScreen(),
+              // builder: (context) => const Register(),
+              // builder: (context) => LoginPage(),
+              // builder: (context) => LoginRequestPage(),
+              builder: (context) => const WelcomeScreen(),
+            ),
           ),
-        ),
-        skipTextStyle: const TextStyle(
-          color: Colors.black,
-          fontSize: 16.0,
-          fontWeight: FontWeight.bold,
+          skipTextStyle: const TextStyle(
+            color: Colors.black,
+            fontSize: 16.0,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
