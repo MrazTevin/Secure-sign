@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:secure_sign/forget_password/forget_password_mail.dart';
 import 'package:secure_sign/utils/constants.dart';
+import 'package:secure_sign/forget_password/forget_password_btn_widget.dart'; 
+import 'package:get/get.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -38,7 +41,41 @@ class LoginForm extends StatelessWidget {
             const SizedBox(height: tFormHeight -20),
             Align(
               alignment: Alignment.centerRight,
-              child: TextButton(onPressed: () {}, child: const Text('Forgot Passowrd?'),)
+              child: TextButton(
+              onPressed: () {
+                showModalBottomSheet(
+                  context: context,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+                   builder: (context) => Container(
+                    padding: EdgeInsets.all(tDefaultSize),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Select one!', style: Theme.of(context).textTheme.headlineLarge,),
+                        Text('Choose your preferred option', style: Theme.of(context).textTheme.headlineSmall,),
+                        // const SizedBox(
+                        //   height: 30.0,
+                        // ),
+                        const SizedBox(height: 30.0),
+                        ForgetPasswordBtnWidget(
+                          btnicon: Icons.email_outlined,
+                          title: 'Email',
+                          subtitle: 'We will send link to your email',
+                          press: (){Get.to(() => const ForgetPasswordMailScreen());},
+                        ),
+                        const SizedBox(height: 20.0),
+                        ForgetPasswordBtnWidget(
+                          btnicon: Icons.mobile_friendly_rounded,
+                          title: 'Phone',
+                          subtitle: 'Use your phone to reset',
+                          press: (){},
+                          )
+                      ],
+                      ),
+                   ),
+                   );
+              }, 
+              child: const Text('Forgot Password?'),)
               ),
               SizedBox(
                 width: double.infinity,
@@ -60,3 +97,4 @@ class LoginForm extends StatelessWidget {
     );
   }
 }
+

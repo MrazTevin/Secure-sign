@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
+      
       defaultTransition: Transition.rightToLeftWithFade,
       transitionDuration: const Duration(milliseconds: 500),
       home: Onboarding(),
