@@ -11,6 +11,7 @@ import 'package:secure_sign/home.dart';
 import 'package:secure_sign/authentication/login/login_request.dart';
 import 'package:secure_sign/project_screens/welcome_screen.dart';
 import 'package:secure_sign/utils/theme.dart';
+import 'package:secure_sign/forget_password/forget_password_mail.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,6 +24,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
+      defaultTransition: Transition.rightToLeftWithFade,
+      transitionDuration: const Duration(milliseconds: 500),
       home: Onboarding(),
       initialRoute: '/', // Add a comma here
       getPages: [
@@ -34,6 +37,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/welcome', page: () => const WelcomeScreen()),
         GetPage(name: '/loginrequest', page: () =>  LoginRequestPage()),
         GetPage(name: '/home', page: () => const Home()),
+        GetPage(name: '/forgotpassword', page: () => const ForgetPasswordMailScreen()),
       ],
     );
   }
