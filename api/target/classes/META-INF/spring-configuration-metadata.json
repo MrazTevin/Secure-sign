@@ -1,0 +1,117 @@
+{
+  "groups": [
+    {
+      "name": "com.behl.salamanca",
+      "type": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties",
+      "sourceType": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties"
+    },
+    {
+      "name": "com.behl.salamanca",
+      "type": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties",
+      "sourceType": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties"
+    },
+    {
+      "name": "com.behl.salamanca",
+      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties"
+    },
+    {
+      "name": "com.behl.salamanca.jwt",
+      "type": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties$JWT",
+      "sourceType": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties"
+    },
+    {
+      "name": "com.behl.salamanca.otp",
+      "type": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties$OTP",
+      "sourceType": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties"
+    },
+    {
+      "name": "com.behl.salamanca.swagger",
+      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.contact",
+      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.security",
+      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+    },
+    {
+      "name": "spring.mail",
+      "type": "com.behl.salamanca.mail.properties.EmailConfigurationProperties",
+      "sourceType": "com.behl.salamanca.mail.properties.EmailConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.behl.salamanca.jwt.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties$JWT"
+    },
+    {
+      "name": "com.behl.salamanca.otp.expiration-minutes",
+      "type": "java.lang.Integer",
+      "sourceType": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties$OTP"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.api-version",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.contact.email",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.contact.name",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.contact.url",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.description",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.security.bearer-format",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.security.name",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.security.scheme",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
+    },
+    {
+      "name": "com.behl.salamanca.swagger.title",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+    },
+    {
+      "name": "spring.mail.password",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.mail.properties.EmailConfigurationProperties"
+    },
+    {
+      "name": "spring.mail.username",
+      "type": "java.lang.String",
+      "sourceType": "com.behl.salamanca.mail.properties.EmailConfigurationProperties"
+    }
+  ],
+  "hints": []
+}
