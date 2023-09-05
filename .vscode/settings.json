@@ -1,4 +1,6 @@
 {
     "ansible.python.interpreterPath": "/opt/homebrew/bin/python3.11",
-    "cmake.sourceDirectory": "/Users/tevinmillaogutu/Library/Mobile Documents/com~apple~CloudDocs/AndroidProjects/FlutterApps/secure_sign/linux"
+    "cmake.sourceDirectory": "/Users/tevinmillaogutu/Library/Mobile Documents/com~apple~CloudDocs/AndroidProjects/FlutterApps/secure_sign/linux",
+    "editor.tabCompletion": "on",
+    "diffEditor.codeLens": true
 }
