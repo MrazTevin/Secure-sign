@@ -1,116 +1,126 @@
 {
   "groups": [
     {
-      "name": "com.behl.salamanca",
-      "type": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties",
-      "sourceType": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties"
+      "name": "com.collicode.api",
+      "type": "com.collicode.api.security.configuration.properties.JwtConfigurationProperties",
+      "sourceType": "com.collicode.api.security.configuration.properties.JwtConfigurationProperties"
     },
     {
-      "name": "com.behl.salamanca",
-      "type": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties",
-      "sourceType": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties"
+      "name": "com.collicode.api",
+      "type": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties",
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties"
     },
     {
-      "name": "com.behl.salamanca",
-      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties"
+      "name": "com.collicode.api.jwt",
+      "type": "com.collicode.api.security.configuration.properties.JwtConfigurationProperties$JWT",
+      "sourceType": "com.collicode.api.security.configuration.properties.JwtConfigurationProperties",
+      "sourceMethod": "getJwt()"
     },
     {
-      "name": "com.behl.salamanca.jwt",
-      "type": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties$JWT",
-      "sourceType": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties"
+      "name": "com.collicode.api.swagger",
+      "type": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger",
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties",
+      "sourceMethod": "getSwagger()"
     },
     {
-      "name": "com.behl.salamanca.otp",
-      "type": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties$OTP",
-      "sourceType": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties"
+      "name": "com.collicode.api.swagger.contact",
+      "type": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact",
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger",
+      "sourceMethod": "getContact()"
     },
     {
-      "name": "com.behl.salamanca.swagger",
-      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties"
+      "name": "com.collicode.api.swagger.security",
+      "type": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Security",
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger",
+      "sourceMethod": "getSecurity()"
     },
     {
-      "name": "com.behl.salamanca.swagger.contact",
-      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+      "name": "com.collioce.api",
+      "type": "com.collicode.api.mail.properties.OneTimePasswordConfigurationProperties",
+      "sourceType": "com.collicode.api.mail.properties.OneTimePasswordConfigurationProperties"
     },
     {
-      "name": "com.behl.salamanca.swagger.security",
-      "type": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+      "name": "com.collioce.api.otp",
+      "type": "com.collicode.api.mail.properties.OneTimePasswordConfigurationProperties$OTP",
+      "sourceType": "com.collicode.api.mail.properties.OneTimePasswordConfigurationProperties",
+      "sourceMethod": "getOtp()"
     },
     {
       "name": "spring.mail",
-      "type": "com.behl.salamanca.mail.properties.EmailConfigurationProperties",
-      "sourceType": "com.behl.salamanca.mail.properties.EmailConfigurationProperties"
+      "type": "com.collicode.api.mail.properties.EmailConfigurationProperties",
+      "sourceType": "com.collicode.api.mail.properties.EmailConfigurationProperties"
     }
   ],
   "properties": [
     {
-      "name": "com.behl.salamanca.jwt.secret-key",
-      "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.security.configuration.properties.JwtConfigurationProperties$JWT"
-    },
-    {
       "name": "com.behl.salamanca.otp.expiration-minutes",
       "type": "java.lang.Integer",
-      "sourceType": "com.behl.salamanca.mail.properties.OneTimePasswordConfigurationProperties$OTP"
+      "sourceType": "com.collicode.api.mail.properties.OneTimePasswordConfigurationProperties$OTP"
     },
     {
-      "name": "com.behl.salamanca.swagger.api-version",
+      "name": "com.collicode.api.jwt.secret-key",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+      "sourceType": "com.collicode.api.security.configuration.properties.JwtConfigurationProperties$JWT"
     },
     {
-      "name": "com.behl.salamanca.swagger.contact.email",
+      "name": "com.collicode.api.swagger.api-version",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger"
     },
     {
-      "name": "com.behl.salamanca.swagger.contact.name",
+      "name": "com.collicode.api.swagger.contact.email",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
     },
     {
-      "name": "com.behl.salamanca.swagger.contact.url",
+      "name": "com.collicode.api.swagger.contact.name",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
     },
     {
-      "name": "com.behl.salamanca.swagger.description",
+      "name": "com.collicode.api.swagger.contact.url",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Contact"
     },
     {
-      "name": "com.behl.salamanca.swagger.security.bearer-format",
+      "name": "com.collicode.api.swagger.description",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger"
     },
     {
-      "name": "com.behl.salamanca.swagger.security.name",
+      "name": "com.collicode.api.swagger.security.bearer-format",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
     },
     {
-      "name": "com.behl.salamanca.swagger.security.scheme",
+      "name": "com.collicode.api.swagger.security.name",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
     },
     {
-      "name": "com.behl.salamanca.swagger.title",
+      "name": "com.collicode.api.swagger.security.scheme",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.swagger.properties.OpenApiConfigurationProperties$Swagger"
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger$Security"
+    },
+    {
+      "name": "com.collicode.api.swagger.title",
+      "type": "java.lang.String",
+      "sourceType": "com.collicode.api.swagger.properties.OpenApiConfigurationProperties$Swagger"
+    },
+    {
+      "name": "com.collioce.api.otp.expiration-minutes",
+      "type": "java.lang.Integer",
+      "sourceType": "com.collicode.api.mail.properties.OneTimePasswordConfigurationProperties$OTP"
     },
     {
       "name": "spring.mail.password",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.mail.properties.EmailConfigurationProperties"
+      "sourceType": "com.collicode.api.mail.properties.EmailConfigurationProperties"
     },
     {
       "name": "spring.mail.username",
       "type": "java.lang.String",
-      "sourceType": "com.behl.salamanca.mail.properties.EmailConfigurationProperties"
+      "sourceType": "com.collicode.api.mail.properties.EmailConfigurationProperties"
     }
   ],
   "hints": []
